@@ -726,14 +726,6 @@ function showEventsForDate(day, month, year, events) {
     `;
     eventsList.appendChild(li);
   });
-  // Agregar funcionalidad de eliminar
-
-  document.querySelectorAll('.delete-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        const id = this.getAttribute('data-id');
-        eliminarEvento(id);
-      });
-    });
   
   // Scroll suave a los eventos
   document.getElementById('selectedDateEvents').scrollIntoView({ 

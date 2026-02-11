@@ -734,6 +734,16 @@ function showEventsForDate(day, month, year, events) {
   });
 }
 </script>
+<button id="borrarRegistros">Eliminar todos los registros</button>
 
+<script>
+  document.getElementById('borrarRegistros').addEventListener('click', function() {
+    if (confirm("¿Estás seguro de eliminar todos los registros?")) {
+      localStorage.clear(); // Esto borra todo el localStorage del dominio
+      alert("Registros eliminados.");
+      location.reload(); // Recarga la página para actualizar la lista
+    }
+  });
+</script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-const CACHE_NAME = "axe-cache-v1";
+const CACHE_NAME = "asertividad-cache-v1";
 const urlsToCache = [
   "./",
   "./AxE_App_Def.html"
